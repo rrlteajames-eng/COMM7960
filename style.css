@@ -1,0 +1,54 @@
+  h1 {
+            color: #2e8b57;
+        }
+        h2 {
+            color: #4682b4;
+        }
+        h3 {
+            color: #6a5acd;
+        }
+        h4 {
+            color: #ff6347;
+        }
+
+        p,ul, ol {
+            color:#6a5acd
+        }
+
+        .h2_sel {
+            color: #6056a1;
+        }
+
+        .image1:hover {
+            border: 2px solid #000;
+            border-radius: 10px;
+            transform: translate(30px, -30px)
+        }
+
+        .image2:hover {
+            border-radius: 20px;
+            opacity: 0.3;
+            transform:rotate(45deg)
+        }
+        
+        .image3:hover {
+            box-shadow: 10px 10px 5px grey;
+        }
+
+        .image4:hover{
+            filter: blur(4.5px);
+        }
+
+        @keyframes move_imge {
+            0% {transform: translate(30px, 30px);}
+            50% {transform: translate(60px, 60px);}
+            100% {transform: translate(120px, 120pxpx);}
+        }
+
+        .image_animation {
+            animation-name: move_imge;
+            animation-duration:4s;
+            animation: move_imge 5s infinite;
+        }
+
+
